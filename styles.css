@@ -1,0 +1,579 @@
+* {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+a {
+    color: #000;
+  }
+
+  .tittles {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 48px;
+  }
+ 
+  
+  /* header */
+  
+  .header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+    
+  }
+  
+  .header li a {
+    display: block;
+    padding: 24px 24px;
+    text-decoration: none;
+    
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+ .container{
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+ }
+
+  /* Section 2 */
+
+.sec02 {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.sec02 h1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  
+}
+
+.sec02 h1 .lt {
+  text-decoration: line-through;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.sec02 h1 .bd{
+  color: #0000EC;
+}
+
+.sec02 p {
+  font-size: 14px;
+  margin: 24px 16px 24px 16px;
+}
+
+.sec02 button {
+  width: 95%;
+  height: 48px;
+  flex: center;
+  font-size: 16px;
+  background-color: #00F3BB;
+  border: none;
+  margin: auto;
+  text-align: center;
+  
+}
+ 
+ .sec02 button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffffff;
+ }
+
+ /* sec03_episodios */
+
+ .sec03 {
+   width: 100%;
+   height: 1150px;
+   /* position: initial; */
+ }
+ .sec03_episodios{
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  margin-top: 50px;
+  height: 1250px;
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  position: relative;
+  bottom: 50px;
+  z-index: -1;
+  align-items: center;
+  
+ }
+ 
+ .sec03 h2 {
+   font-family: "IBM Plex Sans", sans-serif;
+   font-size: 36px;
+   color: #ffffff;
+   margin: 20px;
+   position: relative;
+   top: 120px;
+   left: 150px;
+
+ }
+ 
+  .iframe-container {
+  margin-top: 80px;
+  padding: 20px;
+  display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-gap: 40px;
+ }
+ 
+.frame {
+   padding-top: 20px;
+   position: relative;
+   top: 20px; 
+   min-height: 232px;
+   min-width: 301px;
+ } 
+ 
+ 
+ /* sec04_nosotros */
+
+
+.sec_04 img {
+  max-width: 450px;
+  max-height: 660px;
+}
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;  
+  justify-items: center;
+  align-items: center;
+}
+ 
+
+ /*sec05 Entrevistas*/
+
+ .sec-05 {
+   width: 100%;
+   height: auto;
+   margin-top: 20px;
+ }
+ 
+ .img-entrevistas {
+     display: grid;
+     grid-gap: 0px;
+  
+ }
+ 
+ .entrevistas img {
+   width: 100%;
+   height: auto;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   
+ }
+ 
+ /* sec06 topicos*/
+
+ .sec-06 .tittles {
+   font-size: 36px;
+   margin-left: 20px;
+ }
+  
+ .sec-06 .topicos-cont {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ 
+ .sec-06 .topicos h4 {
+   display: flex;
+   justify-content: center;
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-size: 24px;
+ }
+ 
+
+ /* sec07_novedades */ 
+
+
+
+ .novedades_container {
+   
+  width: 100%;
+   height: 400px;
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+   clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%)
+
+
+ }
+
+ .novedades_container h2 {
+   font-size: 36px;
+   color: #ffffff;
+   text-align: center;
+   
+ }
+
+ .novedades_container button {
+  width: 95%;
+  height: 48px;
+  flex: center;
+  font-size: 18px;
+  background-color: #00F3BB;
+  border: none;
+  margin: auto;
+  text-align: center;
+  
+ }
+
+ .novedades_container button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffffff;
+ }
+
+
+
+/* FOOTER */
+
+
+ footer {
+   width: 100%;
+   height: 80px;
+ }
+
+ footer p{
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+ }
+
+ footer .logos-footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+
+ footer .logos-footer .social-media {
+   margin-top: 20px;
+ }
+
+ footer .logos-footer img:hover {
+   color: #0000FE;
+ }
+
+footer .logos-footer img{
+   width: 16px;
+   height: 16px;
+  
+ }
+ 
+
+   
+  
+ 
+
+ 
+
+
+
+
+
+
+
+
+ /*  ------RESPONSIVE------  */
+
+
+  @media (min-width: 700px) {
+    .header li {
+      float: left;
+    
+    }
+    .header li a {
+      padding: 20px 30px;
+      box-sizing: border-box;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    
+    }
+    .header .menu-icon {
+      display: none;
+    }
+
+    /* section 2 */
+
+    .sec02 button {
+      max-width: 300px;
+    }
+
+    .sec02 p {
+      max-width: 600px;
+    }
+
+
+    .sec03 {
+      height:700px;
+    }
+    .sec03_episodios {
+      height: 850px;
+    }
+
+    /* ENTREVISTAS - SEC 05 */
+
+    
+    .img-entrevistas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0;
+    } 
+
+    .img-entrevistas img {
+      width: 100%;
+      height: 100%;
+    }
+    
+   
+   /* TOPICOS - SEC 06 */
+   
+    .sec-06 .topicos .topicos-cont {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    .sec-06 .topicos-cont img {
+      justify-self: center;
+    }
+
+    .sec-06 .topicos-cont h4 {
+      grid-row-start: 2;
+      text-align: center;
+    }
+
+    footer p {
+      float: left;
+      padding-top: 20px;
+    }
+
+    footer .logos-footer {
+      float: right;
+    
+    }
+
+    footer .logos-footer .social-media {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+    }
+    
+
+
+
+
+
+
+  }
+
+
+
+
+
+  
+@media (max-width: 700px) {
+    
+  
+
+  .header .menu {
+      background-color: #0000EC;
+      height: 350px;
+    }
+
+    .header li a {
+      color: #ffffff;
+      font-size: 16px;
+      height: 12px;
+            
+    }
+
+    .header li a:hover,
+  .header .menu-btn:hover {
+    color: #060A24;
+    opacity: 0.6;
+    text-decoration: line-through; 
+  }
+
+ 
+ .sec03_episodios h2 {
+   position: relative;
+   left: 45px;
+   margin-bottom: 30px;
+ }
+ 
+  .iframe-container {
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+    grid-gap: 0px;
+    
+}
+
+  .iframe-container .frame {
+    display: flex;
+    top: 100px;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 80%;
+       
+  }
+
+
+    /* NOSOTROS_SEC04 */
+
+  .nosotros {
+    height: 980px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+   .nosotros .nosotros-text {
+     padding: 0;
+     margin-bottom: 20px;
+    }
+
+  .sec_04 {
+    height: 980px;
+  }
+  .sec_04 img {
+    min-width: 250px;
+    min-height: 350px;
+  }
+
+
+  /* SEC 02 - ENTREVISTAS */
+
+.entreistas h2 {
+  padding-top: 30px;
+  margin: 0;
+}
+  
+  
+
+}
+ 
+    
+ 
+  
+  
